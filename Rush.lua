@@ -1,4 +1,5 @@
 -- Create entity
+local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 local entity = Creator.createEntity({
     CustomName = "Rush", -- Custom name of your entity
     Model = "https://github.com/ChronoAccelerator/CometRestorationPortalFullOfEntitiesAndStuffYes/blob/main/Rush%20(1).rbxm?raw=true", -- Can be GitHub file or rbxassetid
