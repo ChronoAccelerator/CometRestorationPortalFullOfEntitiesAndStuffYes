@@ -51,3 +51,7 @@ local entity = Creator.createEntity({
     },
     CustomDialog = {"You died to Rush...", "Sorry you died", "Survive next time"}, -- Custom death message
 })
+
+-- Run the created entity
+Creator.runEntity(entity)
+	end
