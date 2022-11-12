@@ -1,22 +1,31 @@
 local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
 -- Create entity
+
+game.Lighting.ColorCorrection.TintColor = Color3.fromRGB(102, 255, 250)
+game.Lighting.ColorCorrection.Contrast = 1
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.ColorCorrection, TweenInfo.new(2.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.ColorCorrection, TweenInfo.new(3),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+
 local entity = Creator.createEntity({
-    CustomName = "Matcher", -- Custom name of your entity
-    Model = "rbxassetid://11402557910", -- Can be GitHub file or rbxassetid
-    Speed = 50, -- Percentage, 100 = default Rush speed
-    DelayTime = 0, -- Time before starting cycles (seconds)
+    CustomName = "Rebound", -- Custom name of your entity
+    Model = "rbxassetid://11401769490", -- Can be GitHub file or rbxassetid
+    Speed = 150, -- Percentage, 100 = default Rush speed
+    DelayTime = 3, -- Time before starting cycles (seconds)
     HeightOffset = 0,
     CanKill = true,
     BreakLights = false,
     FlickerLights = {
         true, -- Enabled
-        1, -- Time (seconds)
+        2.5, -- Time (seconds)
     },
     Cycles = {
         Min = 1,
-        Max = 1,
-        WaitTime = 0,
+        Max = 6,
+        WaitTime = 7,
     },
     CamShake = {
         true, -- Enabled
@@ -48,7 +57,7 @@ local entity = Creator.createEntity({
             },
         },
     },
-    CustomDialog = {"You died to Matcher...", "The lights flicker upon its signal.", "If it does, hide!"}, -- Custom death message (can be as long as you want)
+    CustomDialog = {"You died to Rebound...", "The lights flicker upon its scream.", "It is also tricky, as it rebounds.", "You need to hide to around 6 times.", "Til it never comes back."}, -- Custom death message (can be as long as you want)
 })
 
 -----[[ Advanced ]]-----
