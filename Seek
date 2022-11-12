@@ -41,7 +41,7 @@ local Entities = {
 		Model = nil,
 		Func = function(Rooms, Kill)
 			Kill = Kill and Kill or false
-			Rooms = Rooms and tonumber(Rooms) or 15
+			Rooms = 15
 			local u2 = require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game)
 
 			workspace.Ambience_Seek.TimePosition = 0
