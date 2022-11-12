@@ -10,4 +10,3 @@ task.wait(0.3)
 shadow:Destroy()
 firesignal(game.ReplicatedStorage.Bricks.UseEventModule.OnClientEvent, "tryp", workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value], 1)
 end)
-  	  end
