@@ -105,4 +105,3 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
   
 -- Run the created entity
 Creator.runEntity(entity)
-end
