@@ -1,5 +1,5 @@
 
-local shadow=game:GetObjects("rbxassetid://11498423088")[1]
+local shadow=game:GetObjects("rbxassetid://11566296813")[1]
 shadow.Parent = game.Players.LocalPlayer.Backpack
 local Players = game:GetService("Players")
 local Plr = Players.LocalPlayer
